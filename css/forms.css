@@ -1,12 +1,5 @@
 #webform {
   background-color: var(--form-background-color);
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-#form-section {
-  display: block;
 }
 
 #form-section,
@@ -38,12 +31,6 @@
   padding: 0;
 }
 
-#webform label {
+label {
   display: block;
-  margin-top: 10px;
-}
-
-#webform input {
-  display: block;
-  width: 100%;
 }

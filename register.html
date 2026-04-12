@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
-  <link rel="stylesheet" href="css/form.css">
+  <link rel="stylesheet" href="css/forms.css">
   <link rel="icon" type="image/png" href="img/fav.png">
   <title>Emergency Site</title>
 </head>
@@ -101,6 +101,23 @@
           </label>
         </fieldset>
 
+        <label for="size-select">Choose your size</label>
+        <select name="size" id="size-select">
+          <option value="S">Small</option>
+          <option value="M">Medium</option>
+          <option value="L">Large</option>
+        </select>
+
+        <label for="comment">Do you have any comments?</label>
+        <textarea name="comment" id="comment" rows="5" cols="30">
+        </textarea>
+
+        <label for="color">Choose a color</label>
+        <input type="color" id="color">
+
+        <label for="slider">Antal zombier spottet</label>
+        <input type="range" id="slider" value="0" min="0" max="100">
+        <output for="slider" id="slider-value">0</output>
 
 
         <button>Indsend data</button>
@@ -137,6 +154,17 @@
       </ul>
     </nav>
   </footer>
+
+  <script>
+    function updateResult() {
+      console.log("updateResult");
+      const newValue = document.querySelector("#slider").valueAsNumber;
+      document.querySelector("#slider-value").value = newValue;
+    }
+
+    document.querySelector("#slider").addEventListener("input", updateResult)
+  </script>
+
 </body>
 
 </html>
