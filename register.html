@@ -40,7 +40,73 @@
         <h2>Overskrift</h2>
         <p>Tekst</p>
       </article>
-      <form id="webform"></form>
+      <form id="webform">
+
+        <label for="firstname">
+          <input type="text" id="firstname" />
+          First name
+        </label>
+
+        <label for="pw">
+          <input type="password" id="pw" />
+          Password
+        </label>
+
+        <label for="num">
+          <input type="number" id="num" />
+          Age
+        </label>
+
+        <label for="email">
+          <input type="email" id="email" />
+          E-mail</label>
+
+        <label for="tel">
+          <input type="tel" id="tel" />
+          Telephone</label>
+
+        <label for="date">
+          <input type="date" id="date" />
+          Date</label>
+
+        <fieldset>
+          <legend>Pet you've got at home</legend>
+          <label for="dog">
+            <input type="checkbox" id="dog" name="dog" value="dog" />
+            Dog
+          </label>
+
+          <label for="cat">
+            <input type="checkbox" id="cat" name="cat" value="cat" />
+            Cat
+          </label>
+
+          <label for="octopus">
+            <input type="checkbox" id="octopus" name="octopus" value="octopus" />
+            Octopus
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Do you like animals?</legend>
+
+          <label for="yes">
+            <input type="radio" id="yes" name="likeanimals" />
+            yes
+          </label>
+
+          <label for="no">
+            <input type="radio" id="no" name="likeanimals" />
+            no
+          </label>
+        </fieldset>
+
+
+
+        <button>Indsend data</button>
+
+
+      </form>
     </section>
     <section id="form-summary">
       <h2>Summary</h2>
