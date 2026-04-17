@@ -1,3 +1,5 @@
+//INFOGRAPHIC
+
 document.querySelector("#_Blanket_").addEventListener("click", infoBlanket);
 document.querySelector("#_Moon_").addEventListener("click", infoMoon);
 document.querySelector("#_Mirror_").addEventListener("click", infoMirror);
@@ -41,4 +43,13 @@ function infoMirror() {
      <p>Kan du se din refleksion? Godt tegn.</p>\
      <p>Kan du også klikke rundt på denne hjemmeside? Endnu bedre.</p>\
      <p><strong>Konklusion:</strong> Spøgelser har generelt svært ved at bruge computere.</p>";
+}
+
+// FORM
+const form = document.querySelector("form");
+
+form.addEventListener("invalid", cancelPopup, true);
+
+function cancelPopup() {
+  console.log("cancelPopup");
 }
