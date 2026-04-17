@@ -1,0 +1,54 @@
+[popover] {
+  padding: 1rem;
+
+  max-height: 90vh;
+  max-width: 90wh;
+  width: 60ch;
+}
+
+[popover] button {
+  position: sticky;
+  top: 0;
+  justify-self: end;
+}
+
+:popover-open {
+  display: grid;
+}
+
+::backdrop {
+  background: #0001;
+}
+
+[popover] {
+  opacity: 0;
+  transition: 1s allow-discrete;
+  scale: 0.8;
+}
+
+:popover-open {
+  opacity: 1;
+  scale: none;
+}
+
+@starting-style {
+  :popover-open {
+    opacity: 0;
+  }
+}
+
+::backdrop {
+  background: #0001;
+  opacity: 0;
+  transition: 0.3s allow-discrete;
+}
+
+:popover-open::backdrop {
+  opacity: 1;
+}
+
+@starting-style {
+  :popover-open::backdrop {
+    opacity: 0;
+  }
+}
