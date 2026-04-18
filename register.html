@@ -44,17 +44,17 @@
 
         <label for="firstname">
           <input type="text" id="firstname" />
-          First name
+          Navn
         </label>
 
         <label for="pw">
           <input type="password" id="pw" />
-          Password
+          Kodeord
         </label>
 
         <label for="num">
           <input type="number" id="num" />
-          Age
+          Alder
         </label>
 
         <label for="email">
@@ -63,65 +63,73 @@
 
         <label for="tel">
           <input type="tel" id="tel" />
-          Telephone</label>
+          Telefon</label>
 
         <label for="date">
           <input type="date" id="date" />
-          Date</label>
+          Fødselsdato</label>
 
         <fieldset>
-          <legend>Pet you've got at home</legend>
-          <label for="dog">
-            <input type="checkbox" id="dog" name="dog" value="dog" />
-            Dog
+          <legend>Hvad oplevede du?</legend>
+
+          <label>
+            <input type="checkbox" value="moon">
+            Unormal måne
           </label>
 
-          <label for="cat">
-            <input type="checkbox" id="cat" name="cat" value="cat" />
-            Cat
+          <label>
+            <input type="checkbox" value="blanket">
+            Svævende dyne
           </label>
 
-          <label for="octopus">
-            <input type="checkbox" id="octopus" name="octopus" value="octopus" />
-            Octopus
+          <label>
+            <input type="checkbox" value="mirror">
+            Mærkeligt spejl
           </label>
+
+          <label>
+            <input type="checkbox" value="shadow">
+            Mystiske skygger
+          </label>
+
         </fieldset>
 
         <fieldset>
-          <legend>Do you like animals?</legend>
+          <legend>Hvor alvorligt var det?</legend>
 
-          <label for="yes">
-            <input type="radio" id="yes" name="likeanimals" />
-            yes
+          <label>
+            <input type="radio" name="danger" value="low">
+            Lav risiko
           </label>
 
-          <label for="no">
-            <input type="radio" id="no" name="likeanimals" />
-            no
+          <label>
+            <input type="radio" name="danger" value="medium">
+            Middel risiko
           </label>
+
+          <label>
+            <input type="radio" name="danger" value="high">
+            Høj risiko
+          </label>
+
         </fieldset>
 
-        <label for="size-select">Choose your size</label>
-        <select name="size" id="size-select">
-          <option value="S">Small</option>
-          <option value="M">Medium</option>
-          <option value="L">Large</option>
+        <label for="time">Hvornår skete det?</label>
+        <select id="time">
+          <option>Aften</option>
+          <option>Nat</option>
+          <option>Morgen</option>
+          <option>Dag</option>
         </select>
 
-        <label for="comment">Do you have any comments?</label>
-        <textarea name="comment" id="comment" rows="5" cols="30">
-        </textarea>
+        <label for="comment">Beskriv hændelsen</label>
+        <textarea id="comment" rows="5"></textarea>
 
-        <label for="color">Choose a color</label>
-        <input type="color" id="color">
+        <label for="slider">Hvor mange zombier blev spottet?</label>
+        <input type="range" id="slider" min="0" max="100" value="0">
+        <output id="slider-value">0</output>
 
-        <label for="slider">Antal zombier spottet</label>
-        <input type="range" id="slider" value="0" min="0" max="100">
-        <output for="slider" id="slider-value">0</output>
-
-
-        <button>Indsend data</button>
-
+        <button type="submit">Indsend rapport</button>
 
       </form>
     </section>
@@ -155,20 +163,7 @@
     </nav>
   </footer>
 
-  <script src="js/main.js"></script>
-
-  <!-- Til slider i formularen -->
-  <script>
-    function updateResult() {
-      console.log("updateResult");
-      const newValue = document.querySelector("#slider").valueAsNumber;
-      document.querySelector("#slider-value").value = newValue;
-    }
-
-    document.querySelector("#slider").addEventListener("input", updateResult)
-  </script>
-
-
+  <script src="js/indberet.js"></script>
 
 </body>
 
