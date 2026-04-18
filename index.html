@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/forside.css">
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
   <link rel="icon" type="image/png" href="img/fav.png">
@@ -33,6 +34,50 @@
   </header>
 
   <main>
+    <!-- POPUP -->
+    <article class="news_card">
+      <h3>Zombieudbrud rammer europa</h3>
+      <p>Læs mere om denne vigtige nyhed.</p>
+      <button popovertarget="news_popover">Læs mere</button>
+
+      <!-- Nyheden -->
+      <div id="news_popover" popover>
+        <button popovertarget="news_popover">Luk</button>
+        <h4>Zombieudbrud rammer europas storbyer – myndigheder i kollaps</h4>
+        <time class="newsDate">15. April 2025 – KL. 20:14</time>
+        <img src="/images/ui/news-card.webp" alt="Nyhedsbillede" />
+        <p>
+          Kaos har brudt ud i flere europæiske storbyer i dag, efter et ukendt virus er blevet bekræftet som årsagen til
+          en række voldelige hændelser og uforklarlige dødsfald. Ifølge anonyme kilder i WHO viser de smittede tegn på
+          ekstrem
+          aggressivitet, total smerteresistens og manglende højere kognitiv funktion – samt en uforklarlig trang til at
+          angribe og bide andre mennesker.
+        </p>
+        ...
+      </div>
+    </article>
+
+    <!-- ACCORDION -->
+    <section class="faq-section">
+      <h2>FAQ</h2>
+
+      <details open name="accordion">
+        <summary>Fold mig ud 1</summary>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam nobis recusandae saepe, fugiat officia
+            impedit assumenda ipsa repudiandae odio ducimus laboriosam, laudantium distinctio illo voluptatem tenetur
+            beatae quo!</p>
+        </div>
+      </details>
+
+      <details name="accordion">
+        <summary>Fold mig ud 2</summary>
+        <div class="content">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet doloremque quaerat ipsa voluptates
+            temporibus a quibusdam facilis?</p>
+        </div>
+      </details>
+    </section>
 
   </main>
 
@@ -58,6 +103,8 @@
       </ul>
     </nav>
   </footer>
+
+  <script src="js/burger.js"></script>
 </body>
 
 </html>
