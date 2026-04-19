@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="da">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/general.css">
@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/burger.css">
   <link rel="stylesheet" href="css/cards.css">
   <link rel="stylesheet" href="css/forms.css">
-  <link rel="icon" type="image/png" href="img/fav.png">
+  <link rel="icon" type="image/png" href="img/fav.png" />
   <title>Emergency Site</title>
 </head>
 
@@ -40,99 +40,49 @@
         <h2>Overskrift</h2>
         <p>Tekst</p>
       </article>
+
       <form id="webform">
+        <h3>Dine oplysninger</h3>
 
-        <label for="firstname">
+        <label>
+          Dit navn
           <input type="text" id="firstname" />
-          Navn
         </label>
 
-        <label for="pw">
-          <input type="password" id="pw" />
-          Kodeord
-        </label>
-
-        <label for="num">
-          <input type="number" id="num" />
-          Alder
-        </label>
-
-        <label for="email">
+        <label>
+          Email
           <input type="email" id="email" />
-          E-mail</label>
+        </label>
 
-        <label for="tel">
+        <label>
+          Telefon
           <input type="tel" id="tel" />
-          Telefon</label>
+        </label>
 
-        <label for="date">
+        <h3>Hændelsen</h3>
+
+        <label>
+          Dato
           <input type="date" id="date" />
-          Fødselsdato</label>
+        </label>
 
-        <fieldset>
-          <legend>Hvad oplevede du?</legend>
-
-          <label>
-            <input type="checkbox" value="moon">
-            Unormal måne
-          </label>
-
-          <label>
-            <input type="checkbox" value="blanket">
-            Svævende dyne
-          </label>
-
-          <label>
-            <input type="checkbox" value="mirror">
-            Mærkeligt spejl
-          </label>
-
-          <label>
-            <input type="checkbox" value="shadow">
-            Mystiske skygger
-          </label>
-
-        </fieldset>
-
-        <fieldset>
-          <legend>Hvor alvorligt var det?</legend>
-
-          <label>
-            <input type="radio" name="danger" value="low">
-            Lav risiko
-          </label>
-
-          <label>
-            <input type="radio" name="danger" value="medium">
-            Middel risiko
-          </label>
-
-          <label>
-            <input type="radio" name="danger" value="high">
-            Høj risiko
-          </label>
-
-        </fieldset>
-
-        <label for="time">Hvornår skete det?</label>
-        <select id="time">
-          <option>Aften</option>
-          <option>Nat</option>
-          <option>Morgen</option>
-          <option>Dag</option>
-        </select>
+        <label>
+          Tidspunkt
+          <select id="time">
+            <option>Aften</option>
+            <option>Nat</option>
+            <option>Morgen</option>
+            <option>Dag</option>
+          </select>
+        </label>
 
         <label for="comment">Beskriv hændelsen</label>
         <textarea id="comment" rows="5"></textarea>
 
-        <label for="slider">Hvor mange zombier blev spottet?</label>
-        <input type="range" id="slider" min="0" max="100" value="0">
-        <output id="slider-value">0</output>
-
         <button type="submit">Indsend rapport</button>
-
       </form>
     </section>
+
     <section id="form-summary">
       <h2>Summary</h2>
       <article>
@@ -164,7 +114,7 @@
   </footer>
 
   <script src="js/indberet.js"></script>
-
+  <script src="js/burger.js"></script>
 </body>
 
 </html>

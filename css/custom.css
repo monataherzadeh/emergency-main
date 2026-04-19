@@ -1,21 +1,21 @@
 :root {
   /* Background color */
-  --color-bg: #cfceca;
+  --color-bg: #e9dc8b;
 
   /* Header background color */
-  --color-head-bg: #625e5c;
+  --color-head-bg: #6f8fe8;
 
   /* Logotype */
-  --color-logotype-bg: #2a2828;
-  --color-text-logotype: #c1bfb8;
+  --color-logotype-bg: #000;
+  --color-text-logotype: #f8f2db;
   --font-logotype-size: 1rem;
 
   /* Global menu */
   --color-menu-bg: #5a5b5e;
   /* Links */
-  --color-link-bg: #78766e;
+  --color-link-bg: #f7efd2;
   --color-link-hover: #fff;
-  --color-link-active: #99958f;
+  --color-link-active: #ddd;
   --border-radius-links: 1px;
 
   /* Headlines (size)*/
@@ -41,7 +41,7 @@
   --margin-head-bottom: 5px;
 
   /* Borders */
-  --border-radius: 5px;
+  --border-radius: 22px;
 
   /* Cards */
   --color-card-bg: #e3e1d8;
