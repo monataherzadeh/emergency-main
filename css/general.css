@@ -69,7 +69,7 @@ main > h1 {
 /* NAVIGATION STRUCTURES */
 header > nav {
   height: 100%;
-  background-color: var(--color-menu-bg);
+  background-color: 000;
 }
 nav ul {
   list-style: none;
@@ -83,7 +83,7 @@ nav a {
 }
 /* Måske skal du lave en ny regel for logotype-wrapper, når du har lavet din logotype */
 #logotype-wrapper {
-  background-color: var(--color-logotype-bg);
+  background-color: black;
   display: flex;
   justify-content: flex-start;
   align-items: center;

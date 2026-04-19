@@ -9,8 +9,9 @@ main {
   display: grid;
   row-gap: 1rem;
 }
-main > *:not(:first-child) {
-  margin: 0 1rem;
+main {
+  width: min(1400px, 100%);
+  margin: auto;
 }
 main {
   grid-template-rows: min-content min-content 1fr min-content;
@@ -29,6 +30,7 @@ header {
   display: grid;
   grid-template-columns: 1fr minmax(300px, 1200px) 1fr;
 }
+
 header nav,
 footer nav {
   grid-column: 2 / 3;
